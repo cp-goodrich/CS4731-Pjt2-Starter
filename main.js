@@ -21,6 +21,11 @@ function main() {
     let program = initShaders(gl, "vshader", "fshader");
     gl.useProgram(program);
 
+    // Get the stop sign
+    let stopSign = new Model(
+        "https://web.cs.wpi.edu/~jmcuneo/cs4731/project3/stopsign.obj",
+        "https://web.cs.wpi.edu/~jmcuneo/cs4731/project3/stopsign.mtl");
+
     // Get the lamp
     let lamp = new Model(
         "https://web.cs.wpi.edu/~jmcuneo/cs4731/project3/lamp.obj",
@@ -31,17 +36,12 @@ function main() {
         "https://web.cs.wpi.edu/~jmcuneo/cs4731/project3/car.obj",
         "https://web.cs.wpi.edu/~jmcuneo/cs4731/project3/car.mtl");
 
-    // Get the stop sign
-    let stopSign = new Model(
-        "https://web.cs.wpi.edu/~jmcuneo/cs4731/project3/stopsign.obj",
-        "https://web.cs.wpi.edu/~jmcuneo/cs4731/project3/stopsign.mtl");
-
-    // Get the street
+   // Get the street
     let street = new Model(
         "https://web.cs.wpi.edu/~jmcuneo/cs4731/project3/street.obj",
         "https://web.cs.wpi.edu/~jmcuneo/cs4731/project3/street.mtl");
 
-    // Get the bunny
+    // Get the bunny (you will not need this one until Part II)
     let bunny = new Model(
         "https://web.cs.wpi.edu/~jmcuneo/cs4731/project3/bunny.obj",
         "https://web.cs.wpi.edu/~jmcuneo/cs4731/project3/bunny.mtl");
